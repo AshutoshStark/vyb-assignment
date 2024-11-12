@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'travel':"url('/travel page.svg')",
+        'travel-md':"url('/travel page mob.svg')"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
