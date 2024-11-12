@@ -15,12 +15,22 @@ const FandQ = () => {
       </div>
       <div className='md:w-1/2 flex flex-col gap-4'>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>How much does it cost to set up a store? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 1  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>How much does it cost to set up a store? <GoPlus className='text-2xl'onClick={()=>setToggle(1)} /> </div>}
+        {toggle === 1 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>What kind of digital products can I sell? <GoPlus className='text-2xl'/> </div>
-        {toggle === 2 && <div></div>}
+         {toggle !== 2  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>What kind of digital products can I sell? <GoPlus className='text-2xl'onClick={()=>setToggle(2)} /> </div>}
+        {toggle === 2 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
          {toggle !== 3  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'> Do I need technical skills to use the platform? <GoPlus className='text-2xl' onClick={()=>setToggle(3)}/> </div>}
@@ -34,24 +44,49 @@ const FandQ = () => {
         }
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Is there a limit to the number of products I can list? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 4  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Is there a limit to the number of products I can list? <GoPlus className='text-2xl'onClick={()=>setToggle(4)} /> </div>}
+        {toggle === 4 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>How do I receive payments for my sales? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 5  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>How do I receive payments for my sales? <GoPlus className='text-2xl'onClick={()=>setToggle(5)} /> </div>}
+        {toggle === 5 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Can I sell internationally on this marketplace? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 6  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Can I sell internationally on this marketplace? <GoPlus className='text-2xl'onClick={()=>setToggle(6)} /> </div>}
+        {toggle === 6 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>What support and resources are available for sellers? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 7  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>What support and resources are available for sellers? <GoPlus className='text-2xl'onClick={()=>setToggle(7)} /> </div>}
+        {toggle === 7 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         <div className=''>
-         <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Is there a review process for uploaded products? <GoPlus className='text-2xl'/> </div>
-        {toggle === 1 && <div></div>}
+         {toggle !== 8  && <div className='bg-othertext text-primetext font-semibold flex items-center justify-between px-4 py-3 rounded-2xl'>Is there a review process for uploaded products? <GoPlus className='text-2xl'onClick={()=>setToggle(8)} /> </div>}
+        {toggle === 8 &&<div className='bg-othertext text-primetext font-semibold flex flex-col justify-between px-4 py-3 rounded-2xl'>
+                <p className='flex items-center justify-between border-b-2 pb-3'>Do I need technical skills to use the platform? <HiMiniMinus className='text-2xl' onClick={()=>setToggle(0)}/></p>
+                <p className='pt-3 text-sm'>
+                    No, not at all! Our platform is designed with user-friendliness in mind. You can <br /> easily navigate and set up your store without any technical expertise. It's as <br /> simple as a few clicks to get started!
+                </p>
+            </div>}
         </div>
         </div>
       </div>
